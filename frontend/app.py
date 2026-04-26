@@ -129,7 +129,7 @@ if analyze_button:
         with st.spinner("Analyzing the article..."):
 
             response = requests.post(
-                "http://127.0.0.1:5000/predict",
+                "https://fake-news-detection-yii4.onrender.com/predict",
                 json={"text": article_text}
             )
 
@@ -141,7 +141,7 @@ if analyze_button:
 
             try:
                 related_response = requests.post(
-                    "http://127.0.0.1:5000/related-news",
+                    "https://fake-news-detection-yii4.onrender.com/related-news",
                     json={"text": article_text}
                 )
 

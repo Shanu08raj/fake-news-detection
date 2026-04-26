@@ -108,7 +108,7 @@ def predict():
 
         if len(articles) > 0:
             return jsonify({
-                "prediction": "Likely Real / Verified",
+                "prediction": "Real",
                 "confidence": "Web Verified"
             })
 
